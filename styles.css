@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: lightgray;
+    padding: 32px 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.navbar-menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-menu.open {
+    display: block;
+    
+}
+
+.navbar-item {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 48px;
+    }
+    .navbar-brand {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    
+    .navbar-menu {
+        display: none;
+    }
+    
+    .navbar-menu.open {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    
+    .navbar-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+}
+
+
+main {         
+    > .section-1 {
+        height: 100dvh;
+        background-color: beige;
+    }
+
+    >  .section-2 {
+        height: 100dvh;
+        background-color: cadetblue;
+    }
+
+    > .section-3 {
+        height: 100dvh;
+        background-color: blueviolet;
+    }
+
+    > .section-4 {
+        height: 100dvh;
+        background-color: tomato
+    }
+}
