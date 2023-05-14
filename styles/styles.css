@@ -1,6 +1,5 @@
 @import "./_root.css";
 @import "./about/about.css";
-
 main {         
     > .section-1 {
         height: 100dvh;
