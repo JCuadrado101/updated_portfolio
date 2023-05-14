@@ -1,0 +1,21 @@
+@import "./_root.css";
+@import "./about/about.css";
+
+main {         
+    > .section-1 {
+        height: 100dvh;
+        background-color: var(--primary-background-color);
+    }
+    >  .section-2 {
+        height: 100dvh;
+        background-color: cadetblue;
+    }
+    > .section-3 {
+        height: 100dvh;
+        background-color: blueviolet;
+    }
+    > .section-4 {
+        height: 100dvh;
+        background-color: tomato
+    }
+}
