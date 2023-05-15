@@ -10,13 +10,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
-    <style>
-        #map { 
-            height: 500px; 
-            width: 500px;
-        }
-
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -66,7 +59,7 @@
             </div>
         </section>
         <section class="section-4" id="contact">
-            <h5>Contact Us</h5>
+            <h5>Contact Me</h5>
 
             <div class="contact-container">
                 <form>
@@ -84,22 +77,8 @@
             <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
                 integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
                 crossorigin=""></script>
-                <script>
-                    var map = L.map('map').setView([40.2732, -76.8867 ], 13);
-
-                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
-
-                var marker = L.marker([40.2732, -76.8867 ]).addTo(map);
-
-                </script>
         </section>
     </main>
-    <!-- <footer>
-        <p>Footer</p>
-    </footer> -->
     <script src="scripts.js"></script>
 </body>
 </html>
