@@ -7,6 +7,16 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/styles/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <style>
+        #map { 
+            height: 500px; 
+            width: 500px;
+        }
+
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -18,8 +28,8 @@
         </div>
         <ul class="navbar-menu" id="navbar-menu">
             <li class="navbar-item"><a href="#about">About</a></li>
-            <li class="navbar-item"><a href="#work">Work</a></li>
-            <li class="navbar-item"><a href="#example">Examples</a></li>
+            <!-- <li class="navbar-item"><a href="#work">Work</a></li> -->
+            <li class="navbar-item"><a href="#example">Example</a></li>
             <li class="navbar-item"><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
@@ -40,9 +50,52 @@
                 </div>
             </div>
         </section>
-        <section class="section-2" id="work">Work</section>
-        <section class="section-3" id="example">Examples</section>
-        <section class="section-4" id="contact">Contacts</section>
+        <!-- <section class="section-2" id="work">Work</section> -->
+        <section class="section-3" id="example">
+            <h5>Working Projects</h5>
+            <div class="card-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+
+            </div>
+        </section>
+        <section class="section-4" id="contact">
+            <h5>Contact Us</h5>
+
+            <div class="contact-container">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="map"></div>
+            </div>
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+                integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+                crossorigin=""></script>
+                <script>
+                    var map = L.map('map').setView([40.2732, -76.8867 ], 13);
+
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+                var marker = L.marker([40.2732, -76.8867 ]).addTo(map);
+
+                </script>
+        </section>
     </main>
     <footer>
         <p>Footer</p>

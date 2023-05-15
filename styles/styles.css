@@ -1,5 +1,8 @@
 @import "./_root.css";
 @import "./about/about.css";
+@import "./example/example.css";
+@import "./contact/contact.css";
+
 main {         
     > .section-1 {
         height: 100dvh;
@@ -11,10 +14,10 @@ main {
     }
     > .section-3 {
         height: 100dvh;
-        background-color: blueviolet;
+        background-color: var(--secondary-background-color);
     }
     > .section-4 {
         height: 100dvh;
-        background-color: tomato
+        background-color: var(--primary-background-color);
     }
 }

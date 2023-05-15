@@ -2,6 +2,7 @@
 
 :root {
     --primary-background-color: #232323;
+    --secondary-background-color: #3a3a3a;
     --primary-color-text: rgb(224, 215, 215, 1);
     --primary-color-text-hover: rgb(224, 215, 215, .8);
 }
