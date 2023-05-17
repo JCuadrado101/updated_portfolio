@@ -26,6 +26,10 @@ const handleFormSubmit = (event) => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const message = event.target.message.value;
+    const submitBtn = document.getElementById("submitBtn");
+
+
+
 
     fetch('http://localhost:3000/send-sms', {
       method: 'POST',
@@ -39,7 +43,8 @@ const handleFormSubmit = (event) => {
         })
     .then(response => response.text())
     .then(result => {
-      console.log(result);
+        alert(result);
+        submitBtn.disabled = true;
     })
     .catch(error => {
       console.error(error);
