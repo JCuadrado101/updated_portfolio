@@ -13,11 +13,11 @@ main {
         background-color: cadetblue;
     }
     > .section-3 {
-        height: 100dvh;
+        min-height: 100dvh;
         background-color: var(--secondary-background-color);
     }
     > .section-4 {
-        height: 100dvh;
+        min-height: 100dvh;
         background-color: var(--primary-background-color);
     }
 }
