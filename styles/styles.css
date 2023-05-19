@@ -14,7 +14,8 @@ main {
     }
     > .section-3 {
         /* min-height: 100dvh; */
-        background-color: var(--secondary-background-color);
+        /* background-color: var(--secondary-background-color); */
+        background-color: #b7ecfc;
     }
     > .section-4 {
         min-height: 100dvh;

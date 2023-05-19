@@ -24,11 +24,11 @@
                 font-style: italic;
             }
         }
-        > i  {
-            font-size: 200px;
+        > lottie-player  {
+            width: 400px;
         }   
         @media(max-width: 700px) {
-            > i {
+            > lottie-player {
                 padding-top: 60px;
             }
         }
