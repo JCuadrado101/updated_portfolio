@@ -1,9 +1,10 @@
 .navbar {
     background-color: var(--primary-background-color);
-    padding: 32px 42px;
+    padding: 25px 42px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     color: var(--primary-color-text);
@@ -22,12 +23,19 @@ a:hover {
 
 .navbar-brand {
     display: flex;
-    align-items: center;
 }
 
 .navbar-logo {
     font-weight: bold;
     margin-right: 10px;
+
+    > img {
+        transform: scale(.7);
+    }
+}
+
+.fa-bars {
+    font-size: 20px;
 }
 
 .navbar-toggler {
