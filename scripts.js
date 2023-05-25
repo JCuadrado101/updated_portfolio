@@ -28,9 +28,6 @@ const handleFormSubmit = (event) => {
     const message = event.target.message.value;
     const submitBtn = document.getElementById("submitBtn");
 
-
-
-
     fetch('http://localhost:3000/send-sms', {
       method: 'POST',
       headers: {

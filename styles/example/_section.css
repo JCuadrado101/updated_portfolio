@@ -15,17 +15,68 @@
         padding: 25px;
         gap: 25px;
         justify-content: center;
-        > .card {
-            width: 300px;
-            height: 300px;
-            background-color: white;
-            border-radius: 5px;
-        }
-        > .card:hover {
-            -webkit-box-shadow: 6px 6px 5px 0px rgb(52,244,196);
-            -moz-box-shadow: 6px 6px 5px 0px rgb(52,244,196);
-            box-shadow: 6px 6px 5px 0px rgb(52,244,196);
-            cursor: pointer;
+        > a {
+            > .card {
+                width: 300px;
+                height: 300px;
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                > .fa-comments {
+                    font-size: 120px;
+                    margin-top: 50px;
+                }
+
+                > .example-name {
+                    padding: 30px;
+                    color: black;
+                    font-weight: 700;
+                }
+
+                > .services {
+                    border-top: 1px solid gray;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    > .fa-brands {
+                        font-size: 30px;
+                    }
+
+                    > .fa-html5 {
+                        color: #F16529;
+                    }
+
+                    > .fa-css3-alt {
+                        color: #264de4;
+                    }
+
+                    > .fa-js {
+                        color: #F0DB4F;
+                    }
+
+                    > img {
+                        height: 30px;
+                    }
+                }
+            }
+            > .card:hover {
+                -webkit-box-shadow: 6px 6px 5px 0px rgb(91, 91, 91);
+                -moz-box-shadow: 6px 6px 5px 0px rgb(91, 91, 91);
+                box-shadow: 6px 6px 5px 0px rgb(91, 91, 91);
+                cursor: pointer;
+
+                > .fa-comments {
+                    color: darkgray;
+                }
+            }
         }
     }
 }
