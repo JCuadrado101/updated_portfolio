@@ -1,11 +1,13 @@
 #example {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    justify-content: space-between;
+    height: 100dvh;
+    color: var(--primary-color-text);
+
     > h5 {
         text-align: center;
         font-size: 48px;
-        color: black;
         padding: 40px 0px;
     }
     > .card-container {

@@ -1,6 +1,8 @@
 #contact {
     color: var(--primary-color-text);
     font-weight: 700;
+    height: 80dvh;
+
     > h5 {
         text-align: center;
         font-size: 48px;

@@ -2,6 +2,7 @@
 @import "./about/about.css";
 @import "./example/example.css";
 @import "./contact/contact.css";
+@import "./work/work.css";
 
 main {         
     > .section-1 {
@@ -10,12 +11,11 @@ main {
     }
     >  .section-2 {
         /* height: 100dvh; */
-        background-color: cadetblue;
+        background-color: #b7ecfc;
     }
     > .section-3 {
         /* min-height: 100dvh; */
-        /* background-color: var(--secondary-background-color); */
-        background-color: #b7ecfc;
+        background-color: var(--primary-background-color);
     }
     > .section-4 {
         min-height: 100dvh;
